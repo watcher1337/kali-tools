@@ -17,6 +17,10 @@ metadata:
 ---
 # Gobuster
 
+## Reference
+
+Read the self-contained [operational reference](references/package-reference.md) for installation, selection, suggestions, and failure handling.
+
 ## Identity
 Gobuster performs wordlist-driven directory, DNS, and virtual-host discovery. A result is a candidate, not authorization or a finding.
 

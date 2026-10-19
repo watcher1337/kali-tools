@@ -15,7 +15,7 @@ workflows/                  # pack-level workflow guides
 manifest.yaml               # generated catalog index
 ```
 
-Every canonical skill is at `skills/<id>/SKILL.md`. Generated starter skills are deliberately help-first; curated skills have verified, bounded workflows. See [`references/migration-ledger.md`](references/migration-ledger.md) for the catalog mapping and alias decisions.
+Every canonical skill is at `skills/<id>/SKILL.md`. Every individual tool also bundles `references/package-reference.md` covering what it is, installation/verification, safe use, activation/exclusion, suggestions, and failure/evidence handling. Generated starter skills are deliberately help-first; curated skills have verified, bounded workflows. See [`references/migration-ledger.md`](references/migration-ledger.md) for the catalog mapping and alias decisions.
 
 ## Install
 

@@ -20,6 +20,10 @@ metadata:
 
 # Nuclei
 
+## Reference
+
+Read the self-contained [operational reference](references/package-reference.md) for installation, selection, suggestions, and failure handling.
+
 ## Identity
 
 Nuclei (`nuclei`, package `nuclei`) executes templates against targets. A template match is a scanner alert, not a confirmed vulnerability; template behavior and request volume determine risk.

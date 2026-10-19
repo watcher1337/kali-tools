@@ -17,6 +17,10 @@ metadata:
 ---
 # SQLMap
 
+## Reference
+
+Read the self-contained [operational reference](references/package-reference.md) for installation, selection, suggestions, and failure handling.
+
 ## Identity
 SQLMap automates SQL injection testing. It can generate stateful and high-impact requests; a detection is a lead, not permission to extract data or execute commands.
 

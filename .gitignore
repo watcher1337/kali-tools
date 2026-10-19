@@ -77,3 +77,5 @@ temp/
 *.old
 *.pid
 *.seed
+# Local session exports
+pi-session-*.html

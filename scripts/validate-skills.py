@@ -35,6 +35,15 @@ MASTER_LINKS = (
     "references/scope-and-safety.md",
     "references/evidence-management.md",
 )
+REFERENCE_HEADINGS = (
+    "## What it is",
+    "## Install and verify",
+    "## How to use",
+    "## When to use",
+    "## When not to use",
+    "## Suggestions",
+    "## Failure handling and evidence",
+)
 
 
 def _check_description(desc: object, where: str, errors: list[str]) -> None:
@@ -149,6 +158,16 @@ def validate(root: Path | None = None) -> tuple[list[str], list[str]]:
             verification = fm.get("metadata", {}).get("verification")
             if status == "curated" and verification == "none":
                 errors.append(f"{where}: curated skill must declare verification kali-help or official-docs")
+            reference = rec["dir"] / "references" / "package-reference.md"
+            if not reference.is_file():
+                errors.append(f"{where}: missing self-contained references/package-reference.md")
+            else:
+                reference_text = reference.read_text(encoding="utf-8")
+                for heading in REFERENCE_HEADINGS:
+                    if heading not in reference_text:
+                        errors.append(f"{reference.relative_to(root)}: missing section {heading!r}")
+            if "references/package-reference.md" not in body:
+                errors.append(f"{where}: must link self-contained package reference")
 
         if rid in ids:
             errors.append(f"{where}: duplicate skill id {rid!r}")

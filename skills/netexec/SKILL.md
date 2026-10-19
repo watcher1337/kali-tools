@@ -20,6 +20,10 @@ metadata:
 
 # NetExec
 
+## Reference
+
+Read the self-contained [operational reference](references/package-reference.md) for installation, selection, suggestions, and failure handling.
+
 ## Identity
 
 NetExec is invoked as `nxc` by the Kali package `netexec`. It supports multiple protocols. An authentication success is not administrative access and does not authorize enumeration, command execution, credential dumping, or lateral movement.

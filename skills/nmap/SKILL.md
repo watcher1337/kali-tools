@@ -20,6 +20,10 @@ metadata:
 
 # Nmap
 
+## Reference
+
+Read the self-contained [operational reference](references/package-reference.md) for installation, selection, suggestions, and failure handling.
+
 ## Identity
 
 Nmap (`nmap`, package `nmap`) discovers hosts, ports, and service/version responses. Open or filtered ports are observations; they do not establish a vulnerability, ownership, or authorization.

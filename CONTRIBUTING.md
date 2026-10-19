@@ -26,6 +26,7 @@ Run the generator only for pinned packages and inspect its diff:
 
 ```bash
 python3 scripts/generate-tool-skills.py --upgrade-generated
+python3 scripts/build-tool-references.py
 python3 scripts/build-manifest.py
 ```
 

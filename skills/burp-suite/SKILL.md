@@ -20,6 +20,10 @@ metadata:
 
 # Burp Suite
 
+## Reference
+
+Read the self-contained [operational reference](references/package-reference.md) for installation, selection, suggestions, and failure handling.
+
 ## Identity
 
 Burp Suite is an interactive web-security testing platform. It can inspect, replay, and modify HTTP traffic; that capability is stateful and can expose credentials and sensitive data.

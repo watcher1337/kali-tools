@@ -16,6 +16,10 @@ metadata:
 ---
 # HTTP enumeration
 
+## Reference
+
+Read the self-contained [operational reference](references/package-reference.md) for installation, selection, suggestions, and failure handling.
+
 ## Identity
 This workflow uses `curl` for read-only inspection; `http-enum` is the catalog/package selector. Headers, banners, and redirects are observations, not vulnerabilities.
 

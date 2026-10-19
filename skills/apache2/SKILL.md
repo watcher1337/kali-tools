@@ -26,8 +26,11 @@ metadata:
 ## Identity
 
 - Package: `apache2` (Debian/Kali). Discover executables with `dpkg -L apache2`.
+- Catalog role: general system and network utility tasks (transfer, capture, archive, service helper) on approved endpoints.
 - Purpose: consult the installed command's own documentation; this starter carries no tool-specific behavior.
 - Limitations: no verified examples, output formats, or flag guidance.
+- Read the self-contained [package reference](references/package-reference.md)
+  before choosing an executable or installation action.
 
 ## Activation
 
@@ -54,11 +57,13 @@ No verified examples in this starter. Before running anything:
 2. Read the installed help for the exact version: `<command> --help`, `<command> -h`, or `man <command>`.
 3. Record the version where the command supports it.
 4. Start with the least intrusive, read-only invocation that answers the approved question.
+5. Follow the category workflow in the [package reference](references/package-reference.md).
 
 ## Interpretation
 
 - This starter establishes nothing about output formats or result meaning.
 - Treat raw output as observations, not findings; validate significant results independently before reporting them.
+- Read the category interpretation guidance in the [package reference](references/package-reference.md) before drawing conclusions.
 
 ## Decision rules
 
@@ -70,6 +75,7 @@ No verified examples in this starter. Before running anything:
 ## Evidence
 
 - Save the exact command, tool version, timestamp, target, and full output in the engagement evidence directory.
+- Expected artifacts for this category: tool version, exact command, endpoints or paths involved, and full output including errors.
 - Redact credentials, cookies, tokens, and personal data from any copy that leaves that directory.
 
 ## Related tools

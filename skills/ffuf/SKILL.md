@@ -20,6 +20,10 @@ metadata:
 
 # ffuf
 
+## Reference
+
+Read the self-contained [operational reference](references/package-reference.md) for installation, selection, suggestions, and failure handling.
+
 ## Identity
 
 ffuf (`ffuf`, package `ffuf`) makes wordlist-driven HTTP requests. A response match identifies a candidate to inspect; it does not prove content exposure, authorization, or a vulnerability.
